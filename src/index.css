@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@layer base {
+    :root {
+        --background: 215 25% 97%;
+        --foreground: 215 20% 15%;
+        --card: 0 0% 100%;
+        --card-foreground: 215 20% 15%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 215 20% 15%;
+        --primary: 215 85% 35%;
+        --primary-foreground: 0 0% 98%;
+        --primary-light: 215 75% 45%;
+        --primary-dark: 215 90% 28%;
+        --secondary: 215 15% 55%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 215 20% 92%;
+        --muted-foreground: 215 15% 45%;
+        --accent: 215 85% 60%;
+        --accent-foreground: 0 0% 98%;
+        --success: 142 76% 36%;
+        --success-foreground: 0 0% 98%;
+        --warning: 38 92% 50%;
+        --warning-foreground: 0 0% 98%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        --info: 199 89% 48%;
+        --info-foreground: 0 0% 98%;
+        --border: 215 20% 88%;
+        --input: 215 20% 88%;
+        --ring: 215 85% 35%;
+        --chart-1: 215 85% 45%;
+        --chart-2: 142 76% 40%;
+        --chart-3: 38 92% 55%;
+        --chart-4: 199 89% 50%;
+        --chart-5: 271 81% 56%;
+        --radius: 0.75rem;
+        --shadow-sm: 0 1px 2px 0 hsl(215 20% 15% / 0.05);
+        --shadow-md: 0 4px 6px -1px hsl(215 20% 15% / 0.1);
+        --shadow-lg: 0 10px 15px -3px hsl(215 20% 15% / 0.1);
+        --shadow-xl: 0 20px 25px -5px hsl(215 20% 15% / 0.1);
+        --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .dark {
+        --background: 215 30% 8%;
+        --foreground: 215 15% 92%;
+        --card: 215 28% 12%;
+        --card-foreground: 215 15% 92%;
+        --popover: 215 28% 10%;
+        --popover-foreground: 215 15% 92%;
+        --primary: 215 80% 55%;
+        --primary-foreground: 215 30% 8%;
+        --primary-light: 215 75% 65%;
+        --primary-dark: 215 85% 45%;
+        --secondary: 215 20% 30%;
+        --secondary-foreground: 215 15% 92%;
+        --muted: 215 25% 18%;
+        --muted-foreground: 215 15% 65%;
+        --accent: 215 75% 60%;
+        --accent-foreground: 215 30% 8%;
+        --success: 142 76% 36%;
+        --success-foreground: 0 0% 98%;
+        --warning: 38 92% 50%;
+        --warning-foreground: 0 0% 98%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        --info: 199 89% 48%;
+        --info-foreground: 0 0% 98%;
+        --border: 215 25% 22%;
+        --input: 215 25% 22%;
+        --ring: 215 80% 55%;
+        --chart-1: 215 80% 60%;
+        --chart-2: 142 76% 45%;
+        --chart-3: 38 92% 60%;
+        --chart-4: 199 89% 55%;
+        --chart-5: 271 81% 65%;
+        --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.25);
+        --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.3);
+        --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.35);
+        --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.4);
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}
