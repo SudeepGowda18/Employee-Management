@@ -134,7 +134,7 @@ export const LoginPage = () => {
         </Card>
 
         <p className="text-center text-sm text-muted-foreground mt-6">
-          © 2024 Employee Onboarding System. All rights reserved.
+          © 2026 Employee Onboarding System. All rights reserved.
         </p>
       </div>
     </div>
